@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Tread Head - Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The home page of the Tread Head website, an accessible and thorough resource for novice tank enthusiasts and veteran tread heads alike.">
+        <meta name="author" content="Daniel Lathrop">
+       <!-- <link rel="stylesheet" href="../CSS/styles.css"> -->
+
+       <link rel="icon" type="image/png" sizes="192x192" href="../favicon_package_v0.16/android-chrome-192x192.png">
+       <link rel="apple-touch-icon" sizes="180x180" href="../favicon_package_v0.16/apple-touch-icon.png">
+       <link rel="icon" type="image/png" sizes="32x32" href="../favicon_package_v0.16/favicon-32x32.png">
+       <link rel="icon" type="image/png" sizes="16x16" href="../favicon_package_v0.16/favicon-16x16.png">
+       <link rel="mask-icon" href="../favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    </head>
+
+    <body>
+        <header>
+            <img
+            src="../images/TreadHeadLogoFinal1000x296.png"
+            alt="The Tread Head Logo"
+            srcset="../images/TreadHeadLogoFinal500x148.png 500w, ../images/TreadHeadLogoFinal1000x296.png 1000w, ../images/TreadHeadLogoFinal2000x592.png 2000w, ../images/TreadHeadLogoFinal4000x1189.png 4000w"
+            sizes="(max-width: 500px) 100vw, (max-width: 1000px) 100vw, (max-width: 2000px) 100vw, 100vw"
+            >
+
+            <nav>
+                <ul>
+                    <li class="navbar"><a href="../index.html">Home</a></li>
+                    <li class="navbar"><a href="../AnatomyofaTank/AnatomyofaTank.html">Anatomy of a Tank</a> </li>
+                    <li class="navbar"><a href="../TypesofTanksandArmoredVehicles/TypesofTanksandArmoredVehicles.html">Types of Tanks and Armored Vehicles</a></li>
+                    <li class="navbar"><a href="../TerminologyandAcronyms/TerminologyandAcronyms.html">Terminology and Acronyms</a></li>
+                </ul>
+            </nav>
+
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item-active">Home</li>
+            </ol>
+
+        </header>
+        
+        <article>
+            <h1>Tread Head: Home - A place for veteran and aspiring Tread Heads</h1>
+
+        </article>
+
+
+
+        <footer>
+            <p>This is a demo website.</p>                
+        </footer>
+
+    </body>
+</html>

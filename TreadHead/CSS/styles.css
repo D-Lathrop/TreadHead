@@ -1,0 +1,62 @@
+@media only screen and (min-width: 1024px) {
+
+    .large-3 {
+        width: 25%;
+    }
+  
+    .large-4 {
+        width: 32.9%;
+    }
+
+    nav button {display: none;}
+    nav ul {
+        display: block;
+        padding: .5rem 0px .5rem 0px;
+    }
+    
+    nav li {
+        
+        width: auto;
+        float: left;
+    }
+
+} /* End of media query*/
+
+/*
+
+p {
+font-size: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    background-color:lightslategrey;
+    margin: 0px;
+    display: block;
+}
+
+.breadcrumb {
+    
+    padding: 5px;
+    background-color:lightsteelblue;
+    list-style-type: none;
+    font-size: 200%;
+    border: 5px groove dimgray;
+    width: 80%;
+    display: block;
+}
+
+.breadcrumb-item {
+    display: inline;
+    color:navy;
+}
+
+.breadcrumb-active {
+    display: inline;
+    color:maroon;
+}
+*/

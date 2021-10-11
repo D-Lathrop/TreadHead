@@ -1,0 +1,12 @@
+@media only screen and (min-width: 768px) {
+
+    .medium-6 {
+        width: 50%;
+    }
+   
+    .medium-12 {
+        width: 100%;
+    }
+
+
+} /* End of media query*/
