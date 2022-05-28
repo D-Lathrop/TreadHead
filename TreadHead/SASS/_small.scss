@@ -1,0 +1,238 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Grid Rules */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-6 {
+    flex-basis: 50%;
+}
+
+.small-12 {
+    flex-basis: 100%;
+}
+
+.limited-1600 {
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* End Grid Rules*/
+
+/*
+.arrow {
+    border: #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    box-shadow: #000000;
+    padding: 3px;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+*/
+
+/*   Color Pallette Website: https://colorhunt.co/
+Color Code Tables: https://www.rapidtables.com/web/color/index.html
+Hex to RGB Converter: https://www.rapidtables.com/convert/color/hex-to-rgb.html
+Color Palette:
+Black:          #000000
+Gray:           #3E3636
+Lighter Gray:   #787A91
+Red:            #D72323
+White:          #F5EDED
+Cream:          #FEFBF3
+Blue:           #30475E
+Lighter Blue:   #065471
+*/
+
+header img, nav ul, nav li, .breadcrumb, div.breadcrumb ol, .breadcrumbNormal, .breadcrumbLeft {margin: 0px;}
+
+header img {padding: 0px;}
+
+header picture {
+    height: 0px;
+}
+
+nav {
+    background-color: $primaryColor;
+    font-size: 1.7rem;
+    padding: .3rem 0px .3rem 0px;
+}
+
+nav a {
+    color: $tertiaryColor;
+    text-decoration: none;
+    padding: .4vw 2vw .4vw 2vw;
+}
+
+nav ul {list-style: none;}
+nav li {display: inline-block;}
+
+#darkButton {
+    background-color: $primaryColor;
+    color: $tertiaryColor;
+    padding: 0 2vw 0 2vw;
+    margin: 0rem;
+    cursor: pointer;
+    border: none;
+}
+
+#darkButton img {height: 1.7rem;}
+
+.dark {background-color: $primaryColor;
+    color: $tertiaryColor;
+}
+
+.hideDarkIcon {
+    display: none;
+}
+
+button#hamburgerBtn {
+    background: none;
+    border: none;
+    color: $tertiaryColor;
+    font-size: 2.2rem;
+    cursor: pointer;
+    padding: .1rem 30px 0 1vw;
+}
+
+nav li.activeNav {background-color: rgba(255, 255, 255, 0.4);}
+nav li:hover {background-color: rgba(255, 255, 255, 0.2);}
+nav ul.open {display: block;}
+nav ul {display: none;}
+
+footer a {text-decoration: none;
+color: $tertiaryColor;}
+
+.breadcrumb {
+    background-color: $secondaryColor;
+    font-size: 1.3rem;
+    font-weight: 700;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.tableOfContents ul {list-style: none;}
+.tableOfContents li {display: block; padding: .4rem;}
+.tableOfContents a {text-decoration: none; color: $tertiaryColor; font-size: 1.2rem;}
+.tableOfContents {width:max-content; background-color: #787A91; border: medium solid #3E3636;}
+
+.tableOfContents a:hover {background-color: rgba(255, 255, 255, 0.4);}
+
+.breadcrumb-item {
+    display: inline;
+    color:#000000;  
+}
+
+.breadcrumb-item-active {
+    display: inline;
+    color:$tertiaryColor;
+}
+
+.breadcrumb-item a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.breadcrumb-item-active a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+div.breadcrumb ol {padding: .7rem 0px .7rem 2vw;}
+
+.breadcrumbNormal {padding: .4rem .1rem;}
+
+.breadcrumbLeft {padding:.4rem .1rem .4rem 0px;}
+
+article {
+    padding: .7rem 2vw .7rem 2vw;
+}
+
+article h1 {
+    font-size: 2.2rem;
+}
+
+article h2 {
+    font-size: 1.8rem;
+}
+
+article h3 {
+    font-size: 1.6rem;
+}
+
+.centeralign{
+    text-align: center;
+}
+
+.inlineImgFix {
+    vertical-align: bottom;
+}
+
+  .labelled {
+      position: relative;
+  }
+
+  .block {
+      display: block;
+  }
+
+  .labelled p {
+      background-color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      padding: 1rem;
+      color: #000000;
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+  }
+
+  footer {
+      padding: .5rem;
+      background-color: #000000;
+      color: $tertiaryColor;
+      line-height: 1.4;
+      font-size: 1.2rem;
+  }
+
+  footer span {
+    font-size: 1rem;
+  }
+
+

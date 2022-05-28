@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Tread Head | Home</title>
+        <title>Home | Tread Head</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="The home page of the Tread Head website, an accessible and thorough resource for novice tank enthusiasts and veteran tread heads alike.">
         <meta name="author" content="Daniel Lathrop">
-        <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-        <link rel="stylesheet" type="text/css" href="CSS/small.css">
-        <link rel="stylesheet" type="text/css" href="CSS/medium.css">
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet"> <!--Google Fonts Montserrat Font: https://fonts.google.com/specimen/Montserrat?category=Sans+Serif-->
 
        <link rel="icon" type="image/png" sizes="192x192" href="favicon_package_v0.16/android-chrome-192x192.png">
        <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
@@ -22,34 +19,36 @@
        <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     </head>
 
-    <body>
+    <body id="darkJS" class="">
         <header>
             <picture>
-                <source type="image/png" srcset="images/TreadHeadLogoFinal500x148.png 500w, images/TreadHeadLogoFinal1000x296.png 1000w, 
-                images/TreadHeadLogoFinal2000x592.png 2000w, images/TreadHeadLogoFinal4000x1189.png 4000w" sizes="(max-width: 500px) 100vw, (max-width: 1000px) 100vw, 
+                <source type="image/png" srcset="images/TreadHeadLogoFinal2-500x148.png 500w, images/TreadHeadLogoFinal2-1000x296.png 1000w, 
+                images/TreadHeadLogoFinal2-2000x592.png 2000w, images/TreadHeadLogoFinal2-4000x1189.png 4000w" sizes="(max-width: 500px) 100vw, (max-width: 1000px) 100vw, 
                 (max-width: 2000px) 100vw, 100vw"/>
-                <source type="image/jpeg" srcset="images/TreadHeadLogoFinal500x148.jpg 500w, images/TreadHeadLogoFinal1000x296.jpg 1000w, 
-                images/TreadHeadLogoFinal2000x592.jpg 2000w, images/TreadHeadLogoFinal4000x1189.jpg 4000w" sizes="(max-width: 500px) 100vw, (max-width: 1000px) 100vw, 
+                <source type="image/jpeg" srcset="images/TreadHeadLogoFinal2-500x148.jpg 500w, images/TreadHeadLogoFinal2-1000x296.jpg 1000w, 
+                images/TreadHeadLogoFinal2-2000x592.jpg 2000w, images/TreadHeadLogoFinal2-4000x1189.jpg 4000w" sizes="(max-width: 500px) 100vw, (max-width: 1000px) 100vw, 
                 (max-width: 2000px) 100vw, 100vw"/>
-                <img src="images/TreadHeadLogoFinal1000x296.png" alt="The Tread Head Site Banner"/>
+                <img class=inlineImgFix src="images/TreadHeadLogoFinal2-1000x296.png" alt="The Tread Head Site Banner"/>
             </picture>
             
-        <nav>
-            <div class="row clearfix">
-                <button id="hamburgerBtn">&#9776;</button>
-                    <ul id="navOpen" class="clearfix">
-                    <li class= "activeNav"><a href="index.html">Home</a></li>
-                    <li><a href="AnatomyofaTank/AnatomyofaTank.html">Anatomy of a Tank</a></li>
-                    <li><a href="TypesofTanksandArmoredVehicles/TypesofTanksandArmoredVehicles.html">Types of Tanks</a></li>
-                    <li><a href="TerminologyandAcronyms/TerminologyandAcronyms.html">Terminology</a></li>
-                    </ul>
-            </div> <!-- End of Navbar Row -->
-        </nav>
+            <nav>
+                <div class="row">
+                    <button class="buttonHide" id="hamburgerBtn">&#9776;</button>
+                        <ul id="navOpen">
+                        <li class= "activeNav"><a href="index.html">Home</a></li>
+                        <li><a href="AnatomyofaTank/AnatomyofaTank.html">Anatomy of a Tank</a></li>
+                        <li><a href="TypesofTanksandArmoredVehicles/TypesofTanksandArmoredVehicles.html">Types of Tanks</a></li>
+                        <li><a href="TerminologyandAcronyms/TerminologyandAcronyms.html">Terminology</a></li>
+                        <li><button id="darkButton" type="button" class=""><img src="images\Moon_Icon.png" alt="Dark mode icon"></button></li>
+                        </ul>
+                        
 
+                </div> <!-- End of Navbar Row -->
+            </nav>
 
-        <div class= "row breadcrumb clearfix">
+        <div class= "row breadcrumb">
         <ol>
-            <li class="breadcrumb-item-active">Home</li>
+            <li class="breadcrumb-item-active"><a href="index.html">Home</a></li>
         </ol>
         </div> <!-- End of Breadcrumb Row -->
 
@@ -74,14 +73,17 @@
                 <p>There are some vehicles that have all of these features but are still not tanks, for example 
                     <abbr title="Infantry Fighting Vehicle"><a href="TypesofTanksandArmoredVehicles/TypesofTanksandArmoredVehicles.html#IFV"> 
                     IFVs,</a></abbr> <abbr title="Armored Personel Carrier"><a href="TypesofTanksandArmoredVehicles/TypesofTanksandArmoredVehicles.html#APC"> APCs,</a></abbr> and 
-                    some <a href="TypesofTanksandArmoredVehicles/TypesofTanksandArmoredVehicles.html#tankdestroyer"> tank destroyers.</a>  
+                    some <a href="TypesofTanksandArmoredVehicles/TypesofTanksandArmoredVehicles.html#tankDestroyer"> tank destroyers.</a>  
                     This is because a tank is intended to fulfill a specific role on the battlefield.  This role is to attack the enemy line, breakthrough, and exploit that 
                     breakthough to encircle the enemy, or wreak havoc behind their line.  <abbr title="Infantry Fighting Vehicle">IFVs</abbr>, 
                     <abbr title="Armored Personel Carrier">APCs</abbr>, and tank destroyers don't have this role.</p>
+                    <p>An example of a tank model that lacks one of these features is the Swedish STRV series of tanks that don't have a turret.  Although some might disagree 
+                        the Swedish army considers the STRV series tanks.
+                    </p>
                     <p>If you'd like to learn more about the basic parts of a tank and a tank's features you can visit our page:<a href="AnatomyofaTank/AnatomyofaTank.html"> 
                     Anatomy of a Tank.</a></p>
             </section>
-            
+
             <section>
                 <h2>What makes a good tank?</h2>
                   
@@ -177,7 +179,7 @@
                 <h3>A Balanced Look is Needed</h3>
 
                     <p>A good example of a tank that looks great on paper, but isn't quite so great in reality due to the aspects above is the T-34-76.  The gun, armor, top speed, and 
-                    suspension of the T-34-76 were all very good.  Sometimes the T-34-76 proved to be a real problem for the German army, even to the point of rendering their standard 
+                    suspension of the T-34-76 were all very good for their time.  Sometimes the T-34-76 proved to be a real problem for the German army, even to the point of rendering their standard 
                     anti-tank gun useless. However the T-34-76 had a lot of problems.  There was only a commander and gunner in the turret.  The commander had to load the gun as 
                     well as command the tank, and try to keep an eye on the situation outside the tank, all while making decisions that might cost him his life.  To make matters 
                     worse he had no cupola, only a periscope.  The T-34-76 also had small hatches that were difficult to get out of, meaning the crew were less likely to escape 
@@ -196,13 +198,13 @@
 
 
         <footer>
-            <div class= "row clearfix">
+            <div class= "row">
             <section class= "column small-12 medium-12 large-4">
                 <h2>Contact Us</h2>
                 <ul>
-                    <li>Submit Corrections: <span>treadheadacademic@treadhead.com</span></li>
-                    <li>Submit Research: <span>treadheadeditor@treadhead.com</span></li>
-                    <li>Contribute: <span>treadheadpatreonlink.com</spann></li>
+                    <li>Submit Corrections: <span><a href="mailto:treadheadacademic@treadhead.com">treadheadacademic@treadhead.com</a></span></li>
+                    <li>Submit Research: <span><a href="mailto:treadheadeditor@treadhead.com">treadheadeditor@treadhead.com</a></span></li>
+                    <li>Contribute: <span>treadheadpatreonlink.com</span></li>
                 </ul>
             </section>
 
@@ -224,5 +226,6 @@
                          
         </footer>
         <script src="JS/menuToggle.js"></script>
+        <script src="JS/mainJS.js"></script>
     </body>
 </html>

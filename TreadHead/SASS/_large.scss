@@ -1,0 +1,62 @@
+    .large-3 {
+        flex-basis: 25%;
+    }
+  
+    .large-4 {
+        flex-basis: 32.9%;
+    }
+
+    .large-6 {
+        flex-basis: 50%;
+    }
+
+    nav button.buttonHide {display: none;}
+    nav ul {
+        display: block;
+        padding: .5rem 0px .5rem 0px;
+    }
+    
+    nav li {
+        
+        width: auto;
+        float: left;
+    }
+
+/*
+
+p {
+font-size: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    background-color:lightslategrey;
+    margin: 0px;
+    display: block;
+}
+
+.breadcrumb {
+    
+    padding: 5px;
+    background-color:lightsteelblue;
+    list-style-type: none;
+    font-size: 200%;
+    border: 5px groove dimgray;
+    width: 80%;
+    display: block;
+}
+
+.breadcrumb-item {
+    display: inline;
+    color:navy;
+}
+
+.breadcrumb-active {
+    display: inline;
+    color:maroon;
+}
+*/
