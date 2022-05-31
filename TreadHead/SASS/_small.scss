@@ -111,17 +111,20 @@ nav li {display: inline-block;}
     margin: 0rem;
     cursor: pointer;
     border: none;
+    display:block;
+    position: relative;
+    float:right;
 }
 
 #darkButton img {height: 1.7rem;}
 
+
 .dark {background-color: $primaryColor;
     color: $tertiaryColor;
+    text-decoration: none;
 }
 
-.hideDarkIcon {
-    display: none;
-}
+.darkA {color: $tertiaryColor;}
 
 button#hamburgerBtn {
     background: none;
